@@ -19,7 +19,7 @@ is_valid = False
 # using the while loop
 
 while True:
-    if user_password_length < 6 or user_password_length > 20:  # to check for password character length
+    if user_password_length < 6 or user_password_length > 16:  # to check for password character length
           break
     elif not re.search('[A-Z]', user_password): # to check for capital letters
           break 
@@ -38,8 +38,4 @@ if is_valid: #if all conditions are met
         print("Password is good")
 else:
         print("Password is invalid. Check Your Password and try again")
-
-    
-
-
-#if len(user_password) < 6 or len(user_password) > 16
+ 
